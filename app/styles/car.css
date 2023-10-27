@@ -1,0 +1,71 @@
+.content {
+  display: grid;
+  gap: 5rem;
+  position: relative;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+.summary {
+  background-color: #f9fafb;
+  padding: 3rem;
+  border-radius: 1rem;
+  position: sticky;
+  top: 50px;
+}
+.select {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+}
+.item {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 3fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 1px solid #cfcfcf;
+}
+.item:last-of-type {
+  border-bottom: none;
+}
+.item p {
+  margin: 0;
+}
+.name {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.price {
+  font-weight: 700;
+  color: var(--primary);
+}
+.item span {
+  font-weight: 900;
+}
+.subtotal {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.item img {
+  height: 240px;
+}
+
+.item .delete {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  color: #c6001a;
+  cursor: pointer;
+}
+.item .data {
+  position: relative;
+}
